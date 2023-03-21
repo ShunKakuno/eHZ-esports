@@ -18,8 +18,8 @@ jobs:
         run: echo "$SSH_KEY" > .ssh/id_rsa && chmod 600 .ssh/id_rsa
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
-      - name: deploy main with lftp
-        if: "contains(github.ref, 'main')"
+      - name: deploy master with lftp
+        if: "contains(github.ref, 'mai')"
         run: lftp -e "set net:max-retries 1; set sftp:connect-program \"ssh -a -x -p $SSH_PORT -i .ssh/id_rsa -o StrictHostKeyChecking=no\"; connect sftp://$SSH_USER:@$SSH_HOST; mirror -eR -x .git -x .ssh ./ $SSH_DIR; quit"
         env:
           SSH_HOST: ${{ secrets.SSH_HOST }}
