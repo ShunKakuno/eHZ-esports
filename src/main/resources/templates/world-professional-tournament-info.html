@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>世界大会情報</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link th:href="@{/css/world-professional-tournament-info-styles.css}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body id="about">
+    <!--header始まり-->
+    <header>
+      <p class="eHZ"><a href="/">eHZ</a></p>
+      <p class="subTitle">e-sportsを盛り上げるサイト!</p>
+      <form id="form1" action="https://ehz-esports.com/">
+        <input
+          id="sbox"
+          name="s"
+          type="text"
+          placeholder="キーワードを入力"
+        />
+        <input id="sbtn" type="submit" value="検索" />
+      </form>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="/">トップ</a></li>
+          <li id="current-link">
+            <a href="world-professional-tournament-info">世界大会情報</a>
+          </li>
+          <li>
+            <a href="japan-professional-tournament-info">国内大会情報</a>
+          </li>
+          <li><a href="amateur-tournament-info">アマチュア大会情報</a></li>
+          <li><a href="professional-team">プロチーム一覧</a></li>
+          <li><a href="terms">用語集</a></li>
+          <li><a href="blog/blog">ブログ</a></li>
+          <li><a href="contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--header終わり-->
+    <!--コンテンツ始まり-->
+    <div class="content">
+      <div class="sidebar">
+        <h4>過去の大会</h4>
+        <p>コンテンツはありません</p>
+      </div>
+      <div class="main-center">
+        <div class="main-content">
+          <h1>2023 VCT LOCK//IN São Paulo</h1>
+          <p class="ranking">優勝：FNATIC</p>
+          <p class="ranking">準優勝：LOUD</p>
+          <h2>参加チーム一覧</h2>
+          <h3 id="alpha-team">ALPHAブラケット</h3>
+          <ul class="alpha-team">
+            <li>
+              <div class="KOI">
+                <p><a href="professional-team/koi">KOI</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="NRG">
+                <p><a href="professional-team/nrg">NRG</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="DFM">
+                <p><a href="professional-team/dfm">DFM</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="GIA">
+                <p><a href="professional-team/gia">GIA</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="GEN">
+                <p><a href="professional-team/gen">GEN</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="LOUD">
+                <p><a href="professional-team/loud">LOUD</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="FPX">
+                <p><a href="professional-team/fpx">FPX</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="KC">
+                <p><a href="professional-team/kc">KC</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="BBL">
+                <p><a href="professional-team/bbl">BBL</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="DRX">
+                <p><a href="professional-team/drx">DRX</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="C9">
+                <p><a href="professional-team/c9">C9</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="PRX">
+                <p><a href="professional-team/prx">PRX</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="EG">
+                <p><a href="professional-team/eg">EG</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="TH">
+                <p><a href="professional-team/th">TH</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="MIBR">
+                <p><a href="professional-team/mibr">MIBR</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="TLN">
+                <p><a href="professional-team/tln">TLN</a></p>
+              </div>
+            </li>
+          </ul>
+          <h3 id="omega-team">OMEGAブラケット</h3>
+          <ul class="omega-team">
+            <li>
+              <div class="TL">
+                <p><a href="professional-team/tl">TL</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="TS">
+                <p><a href="professional-team/ts">TS</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="NAVI">
+                <p><a href="professional-team/navi">NAVI</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="KRÜ">
+                <p><a href="professional-team/kru">KRÜ</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="ZETA">
+                <p><a href="professional-team/zeta">ZETA</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="LEV">
+                <p><a href="professional-team/lev">LEV.F</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="VIT">
+                <p><a href="professional-team/vit">VIT</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="GES">
+                <p><a href="professional-team/ges">GES</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="FUT">
+                <p><a href="professional-team/fut">FUT</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="RRQ">
+                <p><a href="professional-team/rrq">RRQ</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="T100">
+                <p><a href="professional-team/100t">100T</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="EDG">
+                <p><a href="professional-team/edg">EDG</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="SEN">
+                <p><a href="professional-team/sen">SEN</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="FNC">
+                <p><a href="professional-team/fnc">FNC</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="T1">
+                <p><a href="professional-team/t1">T1</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="FUR">
+                <p><a href="professional-team/fur">FUR</a></p>
+              </div>
+            </li>
+          </ul>
+          <h2>試合結果</h2>
+          <p id="alert">※日付を押すと該当の日付の配信に遷移します</p>
+          <ul class="result">
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/Pc9WsXqFta0?feature=share"
+                  >2/14</a
+                >
+              </h3>
+              <p>NRG◂2-0 KOI</p>
+              <p>GIA◂2-0 DFM</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/n-NIxe2rUuc?feature=share"
+                  >2/15</a
+                >
+              </h3>
+              <p>KC◂2-1 FPX</p>
+              <p>DRX◂2-1 BBL</p>
+              <p>PRX 0-2▸C9</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/seG0nJr2fkk?feature=share"
+                  >2/16</a
+                >
+              </h3>
+              <p>EG◂2-0 TH</p>
+              <p>TLN◂2-0 MIBR</p>
+              <p>LOUD◂2-0 GEN</p>
+            </li>
+            <li>
+              <h3>
+                <a
+                  href="https://www.youtube.com/live/IRQQ7JOVuBs?feature=sharee"
+                  >2/18</a
+                >
+              </h3>
+              <p>NRG◂2-1 GIA</p>
+              <p>KC 0-2▸LOUD</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/x4Oqsez2aew?feature=share"
+                  >2/19</a
+                >
+              </h3>
+              <p>DRX◂2-1 C9</p>
+              <p>EG 0-2▸TLN</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/t_8GbQ_Z25I?feature=share"
+                  >2/20</a
+                >
+              </h3>
+              <p>LOUD◂2-1 NRG</p>
+              <p>TLN 1-2▸DRX</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/hSNgusAmc2s?feature=share"
+                  >2/23</a
+                >
+              </h3>
+              <p>TS◂2-0 TL</p>
+              <p>KRÜ 0-2▸NAVI</p>
+              <p>LEV.F◂2-0 ZETA</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/HkDLNWFd_4w?feature=share"
+                  >2/24</a
+                >
+              </h3>
+              <p>GE 1-2▸VIT</p>
+              <p>RRQ 0-2▸FUT</p>
+              <p>EDG 1-2▸100T</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/F1_GOlhOQ6g?feature=share"
+                  >2/25</a
+                >
+              </h3>
+              <p>SEN 0-2▸FNC</p>
+              <p>T1 0-2▸FUR</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/CZWmyge3fyY?feature=share"
+                  >2/26</a
+                >
+              </h3>
+              <p>TS 0-2▸NAVI</p>
+              <p>LEV.F◂2-0 VIT</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/PQBBs5gVvRQ?feature=share"
+                  >2/27</a
+                >
+              </h3>
+              <p>FUT 1-2▸100T</p>
+              <p>FUR 0-2▸FNC</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/5Lt46Uo1y58?feature=share"
+                  >2/28</a
+                >
+              </h3>
+              <p>NAVI◂2-0 LEV.F</p>
+              <p>100T 0-2▸FNC</p>
+            </li>
+            <li>
+                <h3>
+                  <a href="https://www.youtube.com/live/x2Q4MO6lV5Y?feature=share"
+                    >3/3</a
+                  >
+                </h3>
+                <p>DRX 2-3▸LOUD</p>
+              </li>
+              <li>
+                <h3>
+                  <a href="https://www.youtube.com/live/9vhWmYB-RKE?feature=share"
+                    >3/4</a
+                  >
+                </h3>
+                <p>NAVI 0-3▸FNC</p>
+              </li>
+              <li>
+                <h3>
+                  <a href="https://www.youtube.com/live/utwVDOB25Lw?feature=share"
+                    >3/5</a
+                  >
+                </h3>
+                <p>FNC◂3-2 LOUD</p>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--コンテンツ終わり-->
+    <!--footer始まり-->
+    <footer>
+      <small>2023 eHZ.</small>
+    </footer>
+    <!--footer終わり-->
+  </body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>用語一覧</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link th:href="@{/css/terms-styles.css}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body id="about">
+    <!--header始まり-->
+    <header>
+      <p class="eHZ"><a href="/">eHZ</a></p>
+      <p class="subTitle">e-sportsを盛り上げるサイト!</p>
+      <form id="form1" action="https://ehz-esports.com/">
+        <input
+          id="sbox"
+          name="s"
+          type="text"
+          placeholder="キーワードを入力"
+        />
+        <input id="sbtn" type="submit" value="検索" />
+      </form>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="/">トップ</a></li>
+          <li>
+            <a href="world-professional-tournament-info">世界大会情報</a>
+          </li>
+          <li>
+            <a href="japan-professional-tournament-info">国内大会情報</a>
+          </li>
+          <li><a href="amateur-tournament-info">アマチュア大会情報</a></li>
+          <li><a href="professional-team">プロチーム一覧</a></li>
+          <li id="current-link"><a href="terms">用語集</a></li>
+          <li><a href="blog">ブログ</a></li>
+          <li><a href="contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--header終わり-->
+    <!--コンテンツ始まり-->
+    <div class="content">
+      <div class="sidebar">
+        <h4>用語一覧</h4>
+        <h5>あ行</h5>
+        <ul class="term-lists">
+          <li><a href="#antieco">アンチエコ</a></li>
+          <li><a href="#eco">エコ</a></li>
+          <li><a href="#entry">エントリー</a></li>
+          <li><a href="#ace">エース</a></li>
+          <li><a href="#okiaim">置きエイム</a></li>
+          <li><a href="#offangle">オフアングル</a></li>
+          <li><a href="#overpeak">オーバーピーク</a></li>
+          <h5>か行</h5>
+          <li><a href="#kabenuki">壁抜き</a></li>
+          <li><a href="#gatikaijo">ガチ解除</a></li>
+          <li><a href="#keep">キープ</a></li>
+          <li><a href="#clutch">クラッチ</a></li>
+          <li><a href="#kosiuti">腰うち</a></li>
+          <h5>さ行</h5>
+          <li><a href="#shoulderpeak">ショルダーピーク</a></li>
+          <li><a href="#jumppeak">ジャンプピーク</a></li>
+          <li><a href="#stopping">ストッピング</a></li>
+          <li><a href="#spike">スパイク</a></li>
+          <li><a href="#thrifty">スリフティ</a></li>
+          <li><a href="#secondbuy">セカンドバイ</a></li>
+          <li><a href="#save">セーブ</a></li>
+          <h5>た行</h5>
+          <li><a href="#doublepeak">ダブルピーク</a></li>
+          <li><a href="#teamace">チームエース</a></li>
+          <li><a href="#defuse">ディフューズ</a></li>
+          <h5>な行</h5>
+          <li><a href="#ninzuuyuuri">人数有利</a></li>
+          <h5>は行</h5>
+          <li><a href="#burstshot">バースト撃ち</a></li>
+          <li><a href="#herobuy">ヒーローバイ</a></li>
+          <li><a href="#peak">ピーク</a></li>
+          <li><a href="#physical">フィジカル</a></li>
+          <li><a href="#fullbuy">フルバイ</a></li>
+          <li><a href="#plant">プラント</a></li>
+          <li><a href="#priaim">プリエイム</a></li>
+          <li><a href="#headline">ヘッドライン</a></li>
+          <h5>ま行</h5>
+          <li><a href="#smokenuki">モク抜き</a></li>
+          <h5>ら行</h5>
+          <li><a href="#lark">ラーク</a></li>
+          <li><a href="#recocon">リココン</a></li>
+          <li><a href="#retake">リテイク</a></li>
+          <li><a href="#lotate">ローテート</a></li>
+          <h5>a</h5>
+          <li><a href="#ADS">ADS</a></li>
+          <li><a href="#awp">awp</a></li>
+          <h5>e</h5>
+          <li><a href="#ez">ez</a></li>
+          <h5>g</h5>
+          <li><a href="#gg">gg</a></li>
+          <li><a href="#glhf">glhf</a></li>
+          <h5>n</h5>
+          <li><a href="#np">np</a></li>
+          <h5>p</h5>
+          <li><a href="#plz">plz</a></li>
+          <h5>t</h5>
+          <li><a href="#troll">troll</a></li>
+          <li><a href="#ty">ty</a></li>
+          <h5>w</h5>
+          <li><a href="#wp">wp</a></li>
+        </ul>
+      </div>
+      <div class="main-center">
+        <div class="main-content">
+          <h1>VALORANT用語集</h1>
+          <h3>VALORANTでよく使われるゲーム用語をまとめています</h3>
+          <div class="index-for-phone">
+            <h4>用語一覧</h4>
+            <p>※対象の用語を押下すると説明に飛びます</p>
+            <h5>あ行</h5>
+            <ul id="a-gyou">
+              <li><a href="#antieco">アンチエコ</a></li>
+              <li><a href="#eco">エコ</a></li>
+              <li><a href="#entry">エントリー</a></li>
+              <li><a href="#ace">エース</a></li>
+              <li><a href="#okiaim">置きエイム</a></li>
+              <li><a href="#offangle">オフアングル</a></li>
+              <li><a href="#overpeak">オーバーピーク</a></li>
+            </ul>
+            <h5>か行</h5>
+            <ul id="ka-gyou">
+              <li><a href="#kabenuki">壁抜き</a></li>
+              <li><a href="#gatikaijo">ガチ解除</a></li>
+              <li><a href="#keep">キープ</a></li>
+              <li><a href="#clutch">クラッチ</a></li>
+              <li><a href="#kosiuti">腰うち</a></li>
+            </ul>
+            <h5>さ行</h5>
+            <ul id="sa-gyou">
+              <li><a href="#shoulderpeak">ショルダーピーク</a></li>
+              <li><a href="#jumppeak">ジャンプピーク</a></li>
+              <li><a href="#stopping">ストッピング</a></li>
+              <li><a href="#spike">スパイク</a></li>
+              <li><a href="#thrifty">スリフティ</a></li>
+              <li><a href="#secondbuy">セカンドバイ</a></li>
+              <li><a href="#save">セーブ</a></li>
+            </ul>
+            <h5>た行</h5>
+            <ul id="ta-gyou">
+              <li><a href="#doublepeak">ダブルピーク</a></li>
+              <li><a href="#teamace">チームエース</a></li>
+              <li><a href="#defuse">ディフューズ</a></li>
+            </ul>
+            <h5>な行</h5>
+            <ul id="na-gyou">
+              <li><a href="#ninzuuyuuri">人数有利</a></li>
+            </ul>
+            <h5>は行</h5>
+            <ul id="ha-gyou">
+              <li><a href="#burstshot">バースト撃ち</a></li>
+              <li><a href="#herobuy">ヒーローバイ</a></li>
+              <li><a href="#peak">ピーク</a></li>
+              <li><a href="#physical">フィジカル</a></li>
+              <li><a href="#fullbuy">フルバイ</a></li>
+              <li><a href="#plant">プラント</a></li>
+              <li><a href="#priaim">プリエイム</a></li>
+              <li><a href="#headline">ヘッドライン</a></li>
+            </ul>
+            <h5>ま行</h5>
+            <ul id="ma-gyou">
+              <li><a href="#smokenuki">モク抜き</a></li>
+            </ul>
+            <h5>ら行</h5>
+            <ul id="ra-gyou">
+              <li><a href="#lark">ラーク</a></li>
+              <li><a href="#recocon">リココン</a></li>
+              <li><a href="#retake">リテイク</a></li>
+              <li><a href="#lotate">ローテート</a></li>
+            </ul>
+            <h5>a</h5>
+            <ul id="a">
+              <li><a href="#ADS">ADS</a></li>
+              <li><a href="#awp">awp</a></li>
+            </ul>
+            <h5>e</h5>
+            <ul id="e">
+              <li><a href="#ez">ez</a></li>
+            </ul>
+            <h5>g</h5>
+            <ul id="g">
+              <li><a href="#gg">gg</a></li>
+              <li><a href="#glhf">glhf</a></li>
+            </ul>
+            <h5>n</h5>
+            <ul id="n">
+              <li><a href="#np">np</a></li>
+            </ul>
+            <h5>p</h5>
+            <ul id="p">
+              <li><a href="#plz">plz</a></li>
+            </ul>
+            <h5>t</h5>
+            <ul id="t">
+              <li><a href="#troll">troll</a></li>
+              <li><a href="#ty">ty</a></li>
+            </ul>
+            <h5>w</h5>
+            <ul id="w">
+              <li><a href="#wp">wp</a></li>
+            </ul>
+          </div>
+          <h2>ゲーム用語</h2>
+          <table>
+            <tr>
+              <th>用語</th>
+              <th>説明</th>
+            </tr>
+            <tr id="peak">
+              <td>ピーク</td>
+              <td>相手のいる位置に対して自分から身を出すこと</td>
+            </tr>
+            <tr id="doublepeak">
+              <td>ダブルピーク</td>
+              <td>相手のいそうな位置へ2人同時に身を出すこと</td>
+            </tr>
+            <tr id="overpeak">
+              <td>オーバーピーク</td>
+              <td>
+                置きエイムしている相手の逆手を取り通常のピークよりも大きく身を出すこと
+              </td>
+            </tr>
+            <tr id="jumppeak">
+              <td>ジャンプピーク</td>
+              <td>
+                相手がオペレーターなどエイムをおいていそうな箇所を知るためにジャンプしながらピークすること
+              </td>
+            </tr>
+            <tr id="shoulderpeak">
+              <td>ショルダーピーク</td>
+              <td>
+                肩だけを出してピークすることで相手に無駄撃ちさせることで情報を得ること
+              </td>
+            </tr>
+            <tr id="stopping">
+              <td>ストッピング</td>
+              <td>
+                弾をまっすぐ飛ばせるために撃つ瞬間だけ止まること。VALORANTの基本の基
+              </td>
+            </tr>
+            <tr id="ace">
+              <td>エース</td>
+              <td>1人で5人倒してラウンド取得すること</td>
+            </tr>
+            <tr id="thrifty">
+              <td>スリフティ</td>
+              <td>
+                相手よりもクレジット消費が少ないかつメイン武器が弱い中でラウンド取得すること
+              </td>
+            </tr>
+            <tr id="teamace">
+              <td>チームエース</td>
+              <td>ラウンド内に味方5人で1人1キルすること</td>
+            </tr>
+            <tr id="clutch">
+              <td>クラッチ</td>
+              <td>相手に人数有利を取られている状態からラウンド取得すること</td>
+            </tr>
+            <tr id="spike">
+              <td>スパイク</td>
+              <td>設置・解除対象の爆弾のこと</td>
+            </tr>
+            <tr id="plant">
+              <td>プラント</td>
+              <td>スパイクを設置すること</td>
+            </tr>
+            <tr id="defuse">
+              <td>ディフューズ</td>
+              <td>スパイクを解除すること</td>
+            </tr>
+            <tr id="gatikaijo">
+              <td>ガチ解除</td>
+              <td>
+                スパイク解除の際にスモーク中や相手の寄りが遅かった場合に途中で解除を辞めずに解除すること
+              </td>
+            </tr>
+            <tr id="fullbuy">
+              <td>フルバイ</td>
+              <td>
+                ヴァンダルやオペレーター等の強い武器とハードアーマー、スキルを全部購入すること
+              </td>
+            </tr>
+            <tr id="herobuy">
+              <td>ヒーローバイ</td>
+              <td>味方1人のみが強い武器を購入し他はエコをすること</td>
+            </tr>
+            <tr id="eco">
+              <td>エコ</td>
+              <td>
+                お金(クレジット)を節約して次ラウンドフルバイようにすること
+              </td>
+            </tr>
+            <tr id="antieco">
+              <td>アンチエコ</td>
+              <td>味方はフルバイで相手がエコの場合</td>
+            </tr>
+            <tr id="entry">
+              <td>エントリー</td>
+              <td>攻め側の時にプラントできるエリアに入ること</td>
+            </tr>
+            <tr id="headline">
+              <td>ヘッドライン</td>
+              <td>
+                相手の頭の位置。多くの場合、箱などオブジェクトの高さが頭の位置になる
+              </td>
+            </tr>
+            <tr id="okiaim">
+              <td>置きエイム</td>
+              <td>
+                相手が出てきそうなところにヘッドラインを合わせて構えること
+              </td>
+            </tr>
+            <tr id="priaim">
+              <td>プリエイム</td>
+              <td>
+                相手がいそうなところにヘッドラインを合わせてピークすること
+              </td>
+            </tr>
+            <tr id="offangle">
+              <td>オフアングル</td>
+              <td>あまり警戒しない位置で武器を構えておくこと</td>
+            </tr>
+            <tr id="kabenuki">
+              <td>壁抜き</td>
+              <td>抜ける壁越しに相手を撃ち抜くこと</td>
+            </tr>
+            <tr id="smokenuki">
+              <td>モク抜き</td>
+              <td>相手が見えないスモーク越しに相手を撃ち抜くこと</td>
+            </tr>
+            <tr id="ninzuuyuuri">
+              <td>人数有利</td>
+              <td>生き残っている味方の人数が相手よりも多いこと</td>
+            </tr>
+            <tr id="keep">
+              <td>キープ</td>
+              <td>
+                ヴァンダルやオペレーターを持っている際、相手との人数有利を覆すことができない場合にそのラウンド勝利を目指さずに武器を次のラウンドに持ち越すこと
+              </td>
+            </tr>
+            <tr id="save">
+              <td>セーブ</td>
+              <td>キープと同義</td>
+            </tr>
+            <tr id="kosiuti">
+              <td>腰うち</td>
+              <td>スコープ(右クリック)を覗かずに撃つこと</td>
+            </tr>
+            <tr id="ADS">
+              <td>ADS</td>
+              <td>スコープ(右クリック)を覗いて撃つこと</td>
+            </tr>
+            <tr id="burstshot">
+              <td>バースト撃ち</td>
+              <td>弾を2発ずつや3発ずつ区切って撃つこと</td>
+            </tr>
+            <tr id="physical">
+              <td>フィジカル</td>
+              <td>撃ち合いの強さのこと</td>
+            </tr>
+            <tr id="secondbuy">
+              <td>セカンドバイ</td>
+              <td>
+                ピストルラウンドを落とした次のラウンドで可能な限りフルバイすること
+              </td>
+            </tr>
+            <tr id="lark">
+              <td>ラーク</td>
+              <td>味方と別行動して相手の意表を突き、キルを狙うこと</td>
+            </tr>
+            <tr id="retake">
+              <td>リテイク</td>
+              <td>スパイク設置後に防衛側がサイトを取り戻すこと</td>
+            </tr>
+            <tr id="lotate">
+              <td>ローテート</td>
+              <td>
+                攻め側の時に目指していたサイトを変えること<br />(例)AサイトからCサイトにローテート
+              </td>
+            </tr>
+            <tr id="recocon">
+              <td>リココン</td>
+              <td>
+                リコイルコントロールの略。銃の反動を制御して弾を中央にまとめること
+              </td>
+            </tr>
+          </table>
+          <h2>チャット用語</h2>
+          <table>
+            <tr>
+              <th>用語</th>
+              <th>説明</th>
+            </tr>
+            <tr id="gg">
+              <td>gg</td>
+              <td>good gameの略</td>
+            </tr>
+            <tr id="ty">
+              <td>ty</td>
+              <td>
+                thank
+                youの略。武器リクエストで買ってもらった場合に使うことが多い
+              </td>
+            </tr>
+            <tr id="np">
+              <td>np</td>
+              <td>
+                no
+                ploblemの略。「問題ないよ」の意味でtyと言われたら使われることが多い
+              </td>
+            </tr>
+            <tr id="plz">
+              <td>plz</td>
+              <td>pleaseの略。何か欲しい時に使われる</td>
+            </tr>
+            <tr id="glhf">
+              <td>glhf</td>
+              <td>
+                good luck have
+                fanの略。「楽しんでください」の意味で使われる。プロが大会に臨む際によく使われる
+              </td>
+            </tr>
+            <tr id="wp">
+              <td>wp</td>
+              <td>
+                well playedの略。上手なプレイヤーを称える言葉として使われる
+              </td>
+            </tr>
+            <tr id="awp">
+              <td>awp</td>
+              <td>
+                オペレーターの略。オペレーターが落ちているときにawpとよく来る。察して拾いましょう
+              </td>
+            </tr>
+            <tr id="ez">
+              <td>ez</td>
+              <td>eazyの略。「弱かったね」の意味で使われる。</td>
+            </tr>
+            <tr id="troll">
+              <td>troll</td>
+              <td>
+                味方へ意図的に妨害し負けさせようとするプレイヤー。即報告案件
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--コンテンツ終わり-->
+    <!--footer始まり-->
+    <footer>
+      <small>2023 eHZ.</small>
+    </footer>
+    <!--footer終わり-->
+  </body>
+</html>

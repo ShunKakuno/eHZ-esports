@@ -1,0 +1,699 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1024px) {
+  /* 画面サイズが1024px以下の場合に適用*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    overflow: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+  /* ロゴ始まり */
+  .eHZ {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+  }
+
+  .eHZ a {
+    color: #6f3bff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .subTitle {
+    display: none;
+  }
+  /* ロゴ終わり */
+
+  /* 検索フォーム始まり*/
+  #sbox {
+    position: relative;
+    outline: 0;
+    height: 22px;
+    padding: 0 10px;
+    border-radius: 2px 0 0 2px;
+    background: #eee;
+    top: -25px;
+    left: 550px;
+    width: 110px;
+  }
+
+  #sbtn {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    border-radius: 0 2px 2px 0;
+    background: #7fbfff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    left: 550px;
+    top: -24px;
+  }
+  /* 検索フォーム終わり*/
+
+  /* グロナビ始まり */
+  nav {
+    background-color: #000000;
+    text-align: center;
+    height: 70px;
+    position: relative;
+    top: -20px;
+  }
+
+  .global-nav {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .global-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .global-nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 4%;
+    position: relative;
+    top: -10px;
+  }
+
+  .global-nav a {
+    color: #9b9a9a;
+  }
+
+  #current-link a {
+    color: #ffffff;
+    border-bottom: solid 2px #f6ff00;
+  }
+  /* グロナビ終わり */
+
+  .sidebar {
+    display: none;
+  }
+
+  /* コンテンツ始まり */
+  .up-bar {
+    padding-left: 20px;
+    display: flex;
+    border-bottom: solid 3px #175a00;
+  }
+
+  .up-bar a {
+    color: #175a00;
+  }
+
+  .main-content h1 {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+
+  .main-content h2 {
+    font-size: 17px;
+    padding-left: 5px;
+  }
+
+  img {
+    width: 600px;
+    margin-left: 10px;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+  }
+  /* footer始まり */
+  footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+    background-color: #452222;
+  }
+
+  footer small {
+    font-size: 12px;
+  }
+  /* footer終わり */
+}
+
+@media screen and (max-width: 599px) {
+  /* 画面サイズが599px以下の場合に適用*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    overflow: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+  /* ロゴ始まり */
+  .eHZ {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+  }
+
+  .eHZ a {
+    color: #6f3bff;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .subTitle {
+    display: none;
+  }
+  /* ロゴ終わり */
+
+  /* 検索フォーム始まり*/
+  #sbox {
+    position: relative;
+    outline: 0;
+    height: 22px;
+    padding: 0 10px;
+    border-radius: 2px 0 0 2px;
+    background: #eee;
+    top: -25px;
+    left: 170px;
+    width: 110px;
+  }
+
+  #sbtn {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    border-radius: 0 2px 2px 0;
+    background: #7fbfff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    left: 170px;
+    top: -24px;
+  }
+  /* 検索フォーム終わり*/
+
+  /* グロナビ始まり */
+  nav {
+    background-color: #000000;
+    text-align: center;
+    height: 40px;
+    position: relative;
+    top: -20px;
+  }
+
+  .global-nav {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .global-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .global-nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 5%;
+    position: relative;
+    top: -10px;
+  }
+
+  .global-nav a {
+    color: #9b9a9a;
+  }
+
+  #current-link a {
+    color: #ffffff;
+    border-bottom: solid 2px #f6ff00;
+  }
+  /* グロナビ終わり */
+
+  .sidebar {
+    display: none;
+  }
+
+  /* コンテンツ始まり */
+  .up-bar {
+    padding-left: 20px;
+    display: flex;
+    border-bottom: solid 3px #175a00;
+  }
+
+  .up-bar a {
+    color: #175a00;
+  }
+
+  .main-content h1 {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+
+  .main-content h2 {
+    font-size: 17px;
+    padding-left: 5px;
+  }
+
+  img {
+    width: 350px;
+    margin-left: 10px;
+  }
+
+  iframe {
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+  }
+  /* footer始まり */
+  footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px 0;
+    background-color: #452222;
+  }
+
+  footer small {
+    font-size: 12px;
+  }
+  /* footer終わり */
+}
+
+@media screen and (min-width: 1025px) {
+  /* 画面サイズが1025px以上の場合に適用*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    overflow: auto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    background: url(../images/VALORANT_Sova_Dark.jpg) repeat-x fixed;
+    background-size: 1400px;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #3583aa;
+    text-decoration: none;
+  }
+
+  /* header始まり */
+  header {
+    background-color: #ffffff;
+    height: 85px;
+  }
+  .eHZ a {
+    color: #6f3bff;
+    margin: 0 auto;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    padding-left: 140px;
+    font-weight: bold;
+  }
+
+  .subTitle {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    top: -30px;
+    padding-left: 200px;
+  }
+
+  /* 検索フォーム始まり*/
+  #form1 {
+    position: relative;
+    max-width: 270px;
+    margin-bottom: 15px;
+    padding-left: 700px;
+  }
+
+  #sbox {
+    position: relative;
+    top: -60px;
+    outline: 0;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 2px 0 0 2px;
+    background: #eee;
+  }
+
+  #sbtn {
+    width: 60px;
+    height: 38.5px;
+    position: relative;
+    top: -60px;
+    border-radius: 0 2px 2px 0;
+    background: #7fbfff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  #sbtn:hover {
+    color: #666;
+  }
+  /* 検索フォーム終わり */
+  /* header終わり */
+
+  /* グロナビ始まり*/
+  nav {
+    background-color: #000000;
+  }
+
+  .global-nav {
+    margin-top: -69px;
+    position: relative;
+  }
+
+  .global-nav li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 15px;
+    list-style: none;
+    font-family: "Bitter", serif;
+  }
+
+  .global-nav li a {
+    color: #ffffff;
+  }
+
+  .global-nav li a:hover {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+  /* グロナビ終わり*/
+
+  /* コンテンツ始まり*/
+  .up-bar {
+    display: none;
+  }
+
+  .content {
+    overflow: hidden;
+    padding: 0 0 40px 0;
+    clear: both;
+    background-color: #ffffff;
+  }
+
+  .main-center {
+    float: right;
+    width: 100%;
+    margin: 0 0 0 -360px;
+    padding: 30px 0 30px 0;
+  }
+
+  .main-content {
+    margin-left: 280px;
+    margin-right: 280px;
+  }
+
+  img {
+    width: 600px;
+    margin-left: 10px;
+  }
+  /* サイドバー始まり */
+  .sidebar h4:before {
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #9cb4a4;
+  }
+
+  .sidebar {
+    float: left;
+    margin: 0 20px 0 20px;
+    padding: 30px 0 30px 0;
+    width: 300px;
+  }
+  /* サイドバー終わり */
+  /* コンテンツ終わり */
+
+  /* footer始まり */
+  footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    background-color: #452222;
+  }
+
+  footer small {
+    font-size: 12px;
+  }
+  /* footer終わり */
+
+  h1 {
+    font-family: "Bitter", serif;
+    font-size: 36px;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  h2 {
+    font-family: "Bitter", serif;
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1530px) {
+  /* 画面サイズが1025px以上の場合に適用*/
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    overflow: auto;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    background: url(../images/VALORANT_Sova_Dark.jpg) repeat-x fixed;
+    background-size: 1400px;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #3583aa;
+    text-decoration: none;
+  }
+
+  /* header始まり */
+  header {
+    background-color: #ffffff;
+    height: 85px;
+  }
+  .eHZ a {
+    color: #6f3bff;
+    margin: 0 auto;
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    padding-left: 140px;
+    font-weight: bold;
+  }
+
+  .subTitle {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    top: -30px;
+    padding-left: 200px;
+  }
+  /* 検索フォーム始まり*/
+  #form1 {
+    position: relative;
+    max-width: 270px;
+    margin-bottom: 15px;
+    padding-left: 1000px;
+  }
+
+  #sbox {
+    position: relative;
+    top: -60px;
+    outline: 0;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 2px 0 0 2px;
+    background: #eee;
+  }
+
+  #sbtn {
+    width: 60px;
+    height: 38.5px;
+    position: relative;
+    top: -60px;
+    border-radius: 0 2px 2px 0;
+    background: #7fbfff;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  #sbtn:hover {
+    color: #666;
+  }
+  /* 検索フォーム終わり */
+  /* header終わり */
+
+  /* グロナビ始まり*/
+  nav {
+    background-color: #000000;
+  }
+
+  .global-nav {
+    margin-top: -69px;
+    position: relative;
+  }
+
+  .global-nav li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 15px;
+    list-style: none;
+    font-family: "Bitter", serif;
+  }
+
+  .global-nav li a {
+    color: #ffffff;
+  }
+
+  .global-nav li a:hover {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+  /* グロナビ終わり*/
+
+  /* コンテンツ始まり*/
+  .up-bar {
+    display: none;
+  }
+
+  .content {
+    overflow: hidden;
+    padding: 0 0 40px 0;
+    clear: both;
+    background-color: #ffffff;
+  }
+
+  .main-center {
+    float: right;
+    width: 100%;
+    margin: 0 0 0 -360px;
+    padding: 30px 0 30px 0;
+  }
+
+  .main-content {
+    margin-left: 280px;
+    margin-right: 280px;
+  }
+  /* サイドバー始まり */
+  .sidebar h4:before {
+    content: "";
+    padding-right: 10px;
+    border-left: 7px solid #9cb4a4;
+  }
+
+  .sidebar {
+    float: left;
+    margin: 0 20px 0 20px;
+    padding: 30px 0 30px 0;
+    width: 300px;
+  }
+  /* サイドバー終わり */
+  /* コンテンツ終わり */
+
+  /* footer始まり */
+  footer {
+    text-align: center;
+    color: #ffffff;
+    padding: 20px 0;
+    background-color: #452222;
+  }
+
+  footer small {
+    font-size: 12px;
+  }
+  /* footer終わり */
+
+  h1 {
+    font-family: "Bitter", serif;
+    font-size: 36px;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  h2 {
+    font-family: "Bitter", serif;
+    font-size: 24px;
+  }
+}

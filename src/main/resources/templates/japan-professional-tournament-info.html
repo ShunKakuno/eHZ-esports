@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>国内大会情報</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link th:href="@{/css/japan-professional-tournament-info-styles.css}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body id="about">
+    <!--header始まり-->
+    <header>
+      <p class="eHZ"><a href="/">eHZ</a></p>
+      <p class="subTitle">e-sportsを盛り上げるサイト!</p>
+      <form id="form1" action="https://ehz-esports.com/">
+        <input
+          id="sbox"
+          name="s"
+          type="text"
+          placeholder="キーワードを入力"
+        />
+        <input id="sbtn" type="submit" value="検索" />
+      </form>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="/">トップ</a></li>
+          <li>
+            <a href="world-professional-tournament-info">世界大会情報</a>
+          </li>
+          <li id="current-link">
+            <a href="japan-professional-tournament-info">国内大会情報</a>
+          </li>
+          <li><a href="amateur-tournament-info">アマチュア大会情報</a></li>
+          <li><a href="professional-team">プロチーム一覧</a></li>
+          <li><a href="terms">用語集</a></li>
+          <li><a href="blog">ブログ</a></li>
+          <li><a href="contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--header終わり-->
+    <!--コンテンツ始まり-->
+    <div class="content">
+      <div class="sidebar">
+        <h4>過去の大会</h4>
+        <p>コンテンツはありません</p>
+      </div>
+      <div class="main-center">
+        <div class="main-content">
+          <h1>Challengers Japan 2023 Split 1</h1>
+          <h2>参加チーム一覧</h2>
+          <p>※MAIN STAGEに進出したチームのみを記載しています</p>
+          <ul class="professional-team">
+            <li>
+              <div class="SG">
+                <p><a href="professional-team/sg">SG</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="RC">
+                <p><a href="professional-team/rc">RC</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="IGZ">
+                <p><a href="professional-team/igz">IGZ</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="FL">
+                <p><a href="professional-team/fl">FL</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="SZ">
+                <p><a href="professional-team/sz">SZ</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="NTH">
+                <p><a href="professional-team/nth">NTH</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="CGZ">
+                <p><a href="professional-team/cgz">CGZ</a></p>
+              </div>
+            </li>
+            <li>
+              <div class="CR">
+                <p><a href="professional-team/cgz">CR</a></p>
+              </div>
+            </li>
+          </ul>
+          <h2>試合結果</h2>
+          <p>※日付を押すと該当の日付の配信に遷移します</p>
+          <ul id="result">
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/lt27ad6xzho?feature=share"
+                  >1/28</a
+                >
+              </h3>
+              <p>SG◂2-0 RC</p>
+              <p>IGZ 1-2▸FL</p>
+              <p>SZ◂2-1 NTH</p>
+              <p>CGZ 0-2▸CR</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/Yi4AqG9lETY?feature=share"
+                  >1/29</a
+                >
+              </h3>
+              <p>SG◂2-0 IGZ</p>
+              <p>SZ◂2-1 RC</p>
+              <p>CR◂2-0 FL</p>
+              <p>CGZ 0-2▸NTH</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/URpf-ZbpAqM?feature=share"
+                  >2/1</a
+                >
+              </h3>
+              <p>SG◂2-1 FL</p>
+              <p>CR◂2-0 IGZ</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/URpf-ZbpAqM?feature=share"
+                  >2/2</a
+                >
+              </h3>
+              <p>RC 1-2▸CGZ</p>
+              <p>SG 1-2▸SZ</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/emfc2CmbGWM?feature=share"
+                  >2/3</a
+                >
+              </h3>
+              <p>NTH 0-2▸FL</p>
+              <p>RC 1-2▸IGZ</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/G2mBae6H2qc?feature=share"
+                  >2/4</a
+                >
+              </h3>
+              <p>NTH◂2-1 SG</p>
+              <p>RC 0-2▸CR</p>
+              <p>SZ◂2-0 FL</p>
+              <p>CGZ 1-2▸IGZ</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/QzhTfAvEmJs?feature=share"
+                  >2/5</a
+                >
+              </h3>
+              <p>FL◂2-0 RC</p>
+              <p>SZ◂2-0 FL</p>
+              <p>CGZ 0-2▸SG</p>
+              <p>NTH 0-2▸CR</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/DCpbrNc3pIs?feature=share"
+                  >2/8</a
+                >
+              </h3>
+              <p>CGZ 0-2▸FL</p>
+              <p>SZ 0-2▸CR</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/EuYYNpN90WA?feature=share"
+                  >2/9</a
+                >
+              </h3>
+              <p>NTH◂2-0 IGZ</p>
+              <p>CGZ 0-2▸SZ</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/qbvuiox1zeU?feature=share"
+                  >2/10</a
+                >
+              </h3>
+              <p>NTH◂2-1 RC</p>
+              <p>SG 0-2▸CR</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/Ku15ouItnks?feature=share"
+                  >2/19</a
+                >
+              </h3>
+              <p>IGZ 1-3▸SG</p>
+              <p>NTH 2-3▸FL</p>
+            </li>
+            <li>
+              <h3>
+                <a href="https://www.youtube.com/live/x2Omy4qYVDw?feature=share"
+                  >2/20</a
+                >
+              </h3>
+              <p>CR◂3-0 SZ</p>
+              <p>SG 2-3▸FL</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--コンテンツ終わり-->
+    <!--footer始まり-->
+    <footer>
+      <small>2023 eHZ.</small>
+    </footer>
+    <!--footer終わり-->
+  </body>
+</html>

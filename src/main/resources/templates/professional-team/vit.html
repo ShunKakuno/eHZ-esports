@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VIT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link th:href="@{/css/professional-team-lists-styles.css}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body id="about">
+    <!--header始まり-->
+    <header>
+      <p class="eHZ"><a href="/">eHZ</a></p>
+      <p class="subTitle">e-sportsを盛り上げるサイト!</p>
+      <form id="form1" action="https://ehz-esports.com/">
+        <input
+                id="sbox"
+                name="s"
+                type="text"
+                placeholder="キーワードを入力"
+        />
+        <input id="sbtn" type="submit" value="検索" />
+      </form>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="/">トップ</a></li>
+          <li>
+            <a href="/world-professional-tournament-info"
+            >世界大会情報</a
+            >
+          </li>
+          <li>
+            <a href="/japan-professional-tournament-info"
+            >国内大会情報</a
+            >
+          </li>
+          <li>
+            <a href="/amateur-tournament-info">アマチュア大会情報</a>
+          </li>
+          <li><a href="/professional-team">プロチーム一覧</a></li>
+          <li><a href="/terms">用語集</a></li>
+          <li><a href="/blog">ブログ</a></li>
+          <li><a href="/contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--header終わり-->
+    <!--コンテンツ始まり-->
+    <div class="content">
+      <div class="sidebar">
+        <ul class="team-lists">
+          <h4>世界で活躍するチーム</h4>
+          <li><a href="/professional-team/bbl">BBL</a></li>
+          <li><a href="/professional-team/c9">C9</a></li>
+          <li><a href="/professional-team/dfm">DFM</a></li>
+          <li><a href="/professional-team/drx">DRX</a></li>
+          <li><a href="/professional-team/edg">EDG</a></li>
+          <li><a href="/professional-team/eg">EG</a></li>
+          <li><a href="/professional-team/fnc">FNC</a></li>
+          <li><a href="/professional-team/fpx">FPX</a></li>
+          <li><a href="/professional-team/fur">FUR</a></li>
+          <li><a href="/professional-team/fut">FUT</a></li>
+          <li><a href="/professional-team/gen">GEN</a></li>
+          <li><a href="/professional-team/ges">GES</a></li>
+          <li><a href="/professional-team/gia">GIA</a></li>
+          <li><a href="/professional-team/kc">KC</a></li>
+          <li><a href="/professional-team/koi">KOI</a></li>
+          <li><a href="/professional-team/kru">KRÜ</a></li>
+          <li><a href="/professional-team/lev">LEV.F</a></li>
+          <li><a href="/professional-team/loud">LOUD</a></li>
+          <li><a href="/professional-team/mibr">MIBR</a></li>
+          <li><a href="/professional-team/navi">NAVI</a></li>
+          <li><a href="/professional-team/nrg">NRG</a></li>
+          <li><a href="/professional-team/prx">PRX</a></li>
+          <li><a href="/professional-team/rrq">RRQ</a></li>
+          <li><a href="/professional-team/sen">SEN</a></li>
+          <li><a href="/professional-team/th">TH</a></li>
+          <li><a href="/professional-team/tl">TL</a></li>
+          <li><a href="/professional-team/tln">TLN</a></li>
+          <li><a href="/professional-team/ts">TS</a></li>
+          <li><a href="/professional-team/t1">T1</a></li>
+          <li id="current"><a href="/professional-team/vit">VIT</a></li>
+          <li><a href="/professional-team/zeta">ZETA</a></li>
+          <li><a href="/professional-team/100t">100T</a></li>
+          <h4>国内で活躍するチーム</h4>
+          <li><a href="/professional-team/cgz">CGZ</a></li>
+          <li><a href="/professional-team/cr">CR</a></li>
+          <li><a href="/professional-team/fl">FL</a></li>
+          <li><a href="/professional-team/igz">IGZ</a></li>
+          <li><a href="/professional-team/nth">NTH</a></li>
+          <li><a href="/professional-team/rc">RC</a></li>
+          <li><a href="/professional-team/sg">SG</a></li>
+          <li><a href="/professional-team/sz">SZ</a></li>
+        </ul>
+      </div>
+      <div class="main-center">
+        <div class="main-content">
+          <h1>Team Vitality</h1>
+          <table>
+            <tr>
+              <td class="name">Destrian</td>
+              <td></td>
+              <td>
+                <a href="https://twitter.com/DestrianVAL"
+                  ><img
+                        th:src="@{/images/twitter.png}"
+                    alt=""
+                    class="twitter"
+                  />twitter</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="name">Twisten</td>
+              <td>
+                <a href="https://www.twitch.tv/twisten1k"
+                  ><img
+                        th:src="@{/images/twitch.png}"
+                    alt=""
+                    class="twitch"
+                  />twitch</a
+                >
+              </td>
+              <td>
+                <a href="https://twitter.com/TwistenVAL"
+                  ><img
+                        th:src="@{/images/twitter.png}"
+                    alt=""
+                    class="twitter"
+                  />twitter</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="name">BONECOLD</td>
+              <td>
+                <a href="https://www.twitch.tv/bonecoldval"
+                  ><img
+                        th:src="@{/images/twitch.png}"
+                    alt=""
+                    class="twitch"
+                  />twitch</a
+                >
+              </td>
+              <td>
+                <a href="https://twitter.com/BonecoldVAL"
+                  ><img
+                        th:src="@{/images/twitter.png}"
+                    alt=""
+                    class="twitter"
+                  />twitter</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="name">MOLSI</td>
+              <td>
+                <a href="https://www.twitch.tv/molsi"
+                  ><img
+                        th:src="@{/images/twitch.png}"
+                    alt=""
+                    class="twitch"
+                  />twitch</a
+                >
+              </td>
+              <td>
+                <a href="https://twitter.com/molsival"
+                  ><img
+                        th:src="@{/images/twitter.png}"
+                    alt=""
+                    class="twitter"
+                  />twitter</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="name">ceNder</td>
+              <td></td>
+              <td>
+                <a href="https://twitter.com/ceNder1337"
+                  ><img
+                        th:src="@{/images/twitter.png}"
+                    alt=""
+                    class="twitter"
+                  />twitter</a
+                >
+              </td>
+            </tr>
+          </table>
+          <h2>実績</h2>
+          <ul>
+            <li>2023 VCT LOCK//IN São Paulo オメガブラケット Best8</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--コンテンツ終わり-->
+    <!--footer始まり-->
+    <footer>
+      <small>2023 eHZ.</small>
+    </footer>
+    <!--footer終わり-->
+  </body>
+</html>

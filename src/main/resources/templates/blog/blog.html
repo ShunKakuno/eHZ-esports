@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ブログ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link th:href="@{/css/blog-styles.css}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body id="about">
+    <!--header始まり-->
+    <header>
+      <p class="eHZ"><a href="/">eHZ</a></p>
+      <p class="subTitle">e-sportsを盛り上げるサイト!</p>
+      <form id="form1" action="https://ehz-esports.com/">
+        <input
+          id="sbox"
+          name="s"
+          type="text"
+          placeholder="キーワードを入力"
+        />
+        <input id="sbtn" type="submit" value="検索" />
+      </form>
+      <nav>
+        <ul class="global-nav">
+          <li><a href="/">トップ</a></li>
+          <li>
+            <a href="/world-professional-tournament-info"
+              >世界大会情報</a
+            >
+          </li>
+          <li>
+            <a href="/japan-professional-tournament-info"
+              >国内大会情報</a
+            >
+          </li>
+          <li>
+            <a href="/amateur-tournament-info">アマチュア大会情報</a>
+          </li>
+          <li><a href="/professional-team">プロチーム一覧</a></li>
+          <li><a href="/terms">用語集</a></li>
+          <li id="current-link"><a href="/blog">ブログ</a></li>
+          <li><a href="/contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--header終わり-->
+    <!--コンテンツ始まり-->
+    <div class="content">
+      <div class="sidebar">
+        <h4>最新の記事</h4>
+        <p>コンテンツはありません</p>
+        <h4>過去のブログ</h4>
+        <p>コンテンツはありません</p>
+      </div>
+      <div class="main-center">
+        <div class="up-bar">
+          <h3><a href="/2023-03-03" id="pre">＜前の記事へ｜</a></h3>
+          <h3><a href="/blog-lists" id="lists">一覧</a></h3>
+          <h3><a href="" id="next">｜次の記事へ＞</a></h3>
+        </div>
+        <div class="main-content">
+          <h1>FNATICおめでとう!!!!</h1>
+          <p>2023/03/05</p>
+          <p>
+            本日2023 VCT LOCK//IN São
+            Paulo1が終了しました！選手の皆様お疲れ様でした！
+          </p>
+          <p><br />栄えある優勝はFNATICです！本当におめでとう！</p>
+          <p>
+            <br />正直2map連取した後に2map連取されてアイスボックスも3-9折り返しだったので厳しいか、、と思っていたらこの結果！
+          </p>
+          <p>ようやく手にした優勝本当に嬉しすぎて浸っていました（笑）</p>
+          <p>やはり来日したチームが活躍してくれるのは嬉しいです！</p>
+          <p>
+            <br />次はリーグ戦！ZETA、DFM、DRX、そしてFNCを戦力で応援しましょう！
+          </p>
+          <p><br />Premier 試合の様子は以下から確認できます。</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/utwVDOB25Lw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <!--コンテンツ終わり-->
+    <!--footer始まり-->
+    <footer>
+      <small>2023 eHZ.</small>
+    </footer>
+    <!--footer終わり-->
+  </body>
+</html>
